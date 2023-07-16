@@ -1,0 +1,37 @@
+section {
+    color: rgb(5, 5, 70);
+}
+
+h1{
+    background-color: antiquewhite;
+}
+article{
+    background-color: blanchedalmond;
+}
+
+h2{
+    background-color: aquamarine;
+}
+p{
+    background-color: aqua;
+}
+
+.selector {
+    background-color: blueviolet;
+}
+
+#unique{
+    background-color: rgb(166, 35, 113);
+}
+
+.strong {
+    background-color: rgb(135, 183, 30);
+}
+
+button[type="submit"] {
+    background-color: rgb(135, 183, 30);
+}
+
+section em {
+    background-color: brown;
+}
