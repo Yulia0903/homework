@@ -7,27 +7,27 @@
 
   .planet-1{
     position: absolute;
-   margin-left: 180px;
-   margin-top: 20px;
+   left: 180px;
+   top: 20px;
  }
   
  .planet-2 {
   position: absolute;
-  margin-left: 40px;
-  margin-top: 60px;
+  left: 40px;
+  top: 60px;
  }
 
  .spaceship {
   position: absolute;
-  margin-top: 180px;
-  margin-left: 100px;
+  top: 180px;
+  left: 100px;
 }
 
 
  .planet-3 {
   position: absolute;
-  margin-top: 140px;
-  margin-left: 120px;
+  top: 140px;
+ left: 120px;
   
   }
 
@@ -35,18 +35,18 @@
 
    .asteroid {
     position: absolute;
-    margin-top: 100px;
-    margin-left: 450px;
+    top: 100px;
+    left: 450px;
    }
 
    .ufo {
     position: absolute;
-  margin-top: 300px;
-  margin-left: 90px;
+  top: 300px;
+  left: 90px;
    }
 
    .superman {
     position: absolute;
-    margin-top: 328px;
-    margin-left: 490px;
+   top: 328px;
+    left: 490px;
    }
