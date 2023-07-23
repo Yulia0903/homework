@@ -3,7 +3,13 @@
     height: auto;
     margin: 0 auto;
     background-color: #E5E5E5;
-    overflow: auto;
+    }
+
+    .clearfix::after{
+        content: "";
+        display: table;
+        clear: both;
+
     }
 
 .cards{
