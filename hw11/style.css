@@ -30,6 +30,14 @@
   background-color: #2248ef;
 }
 
+.nav__product::after {
+  content: "";
+  height: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 .nav__list__item:hover .product__list,
 .product__list__item.product__menu:hover .sub-item__list {
   display: block;
