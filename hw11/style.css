@@ -1,6 +1,7 @@
 .nav {
   background-color: rgb(53, 49, 49);
   border-bottom: 8px solid #2248ef;
+
 }
 
 .nav__list {
@@ -24,18 +25,11 @@
 
 .nav__link:hover {
   background-color: #2248ef;
+  /* transform: scale(1.2); */
 }
 
 .nav__link:focus {
   background-color: #2248ef;
-}
-
-.nav__product::after {
-  content: "";
-  height: 10px;
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 
 .nav__list__item:hover .product__list,
