@@ -2,45 +2,36 @@ body {
   font-family: "Graphik";
 }
 
-/* navigation */
-
-.header {
-  border-bottom: 1px solid #ccc;
-}
-
-.container {
-  width: 1440px;
+.section {
+  width: 1290px;
   margin: 0 auto;
 }
 
+/* navigation */
+
+.navigation-container {
+  border-bottom: 1px solid #ccc;
+}
+
 .navigation {
+  width: 1440px;
+  margin: 0 auto;
   display: flex;
-  padding-top: 34px;
-  padding-bottom: 34px;
-}
-
-.navigation__link {
-  display: flex;
-  margin-right: 50px;
-  margin-left: 50px;
-}
-
-.navigation__menu {
-  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
 }
 
 .navigation__list {
   display: flex;
+  justify-content: space-around;
   padding: 0;
+  margin: 0;
 }
 
 .navigation__list__item {
-  margin-left: 20px;
   list-style-type: none;
-  display: flex;
-  align-items: flex-end;
-  margin: 0;
-  padding-right: 57px;
+  margin-left: 50px;
+  padding-top: 15px;
 }
 
 .navigation__list__item__link {
@@ -52,23 +43,13 @@ body {
   line-height: 20px;
 }
 
-.navigation__conteiner__button {
-  margin-left: 200px;
-}
-
 .navigation__button {
-  width: 120px;
-  height: 45px;
-  flex-shrink: 0;
   background: #ff6336;
-  border: 0;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 45px;
   width: 160px;
-  height: 60px;
-  flex-shrink: 0;
   padding: 0;
 }
 
@@ -90,17 +71,14 @@ body {
 
 /* main-container */
 
-.main-container {
+.main-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 1290px;
-  margin: 0 auto;
   padding-bottom: 147px;
 }
 
-.main-section {
+.main {
   padding-top: 130px;
-  padding-left: 75px;
 }
 
 .main-section__header {
@@ -142,12 +120,10 @@ body {
   background-color: rgba(255, 156, 125, 1);
 }
 
-.companies-section {
-  width: 1290px;
+.companies {
   text-align: center;
   padding-top: 98px;
   padding-bottom: 110px;
-  margin: 0 auto;
 }
 
 .companies-section__paragraph {
@@ -159,6 +135,8 @@ body {
 }
 
 .companies-section__list {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -172,9 +150,9 @@ body {
   padding-right: 80px;
 }
 
-.instruction-section {
-  width: 1290px;
-  margin: 0 auto;
+/* instruction-container */
+
+.instruction {
   display: flex;
   justify-content: space-between;
   padding: 100px 75px 150px 75px;
@@ -207,7 +185,7 @@ body {
   padding-right: 75px;
 }
 
-.instruction-section:nth-child(even) {
+.instruction:nth-child(even) {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -218,9 +196,7 @@ body {
   background-color: rgba(255, 248, 228, 1);
 }
 
-.application-section {
-  width: 1290px;
-  margin: 0 auto;
+.application {
   text-align: center;
   padding: 120px 75px 170px 75px;
 }
@@ -230,9 +206,6 @@ body {
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
-}
-
-.application-section__cards {
 }
 
 .application-section__cards__list {
@@ -264,11 +237,9 @@ body {
 
 /* productivity-container */
 
-.productivity-section {
-  width: 1290px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 154px 45px 154px 75px;
+.productivity {
+  text-align: left;
+  padding: 154px 0;
 }
 
 .productivity-section__paragraph {
@@ -330,12 +301,11 @@ body {
   background: #c9e8f2;
 }
 
-.quet-section {
-  width: 1290px;
-  margin: 0 auto;
+.quet {
   display: flex;
   justify-content: space-between;
-  padding: 130px 75px 105px 75px;
+  padding: 130px 0 105px;
+  text-align: left;
 }
 
 .quet-wrapper {
@@ -359,7 +329,7 @@ body {
 }
 
 .quet-section__photo {
-  padding: 0 75px 0 59px;
+  margin-left: 59px;
 }
 
 /* software-container */
@@ -368,12 +338,21 @@ body {
   background: #dabc98;
 }
 
-.software-section {
-  width: 1290px;
-  margin: 0 auto;
+.software {
   display: flex;
   justify-content: space-between;
-  padding: 130px 75px 105px 75px;
+  padding: 130px 0 105px;
+}
+
+.software-section__cake {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 125px;
+  border-right: 1px solid black;
+}
+
+.software-section__img-cake {
+  margin-right: 67px;
 }
 
 .software-section__header {
@@ -381,15 +360,35 @@ body {
   font-weight: 600;
   line-height: 50px;
   margin: 0;
-  padding-right: 125px;
-  border-right: 1px solid black;
+  padding-top: 25px;
+}
+
+.software-section__stars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.software-section__stars-logo {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 60px;
+}
+
+.software-section__stars-img {
+  margin-bottom: 20px;
+}
+
+.software-section__paragraph {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
 }
 
 /* integration-container */
 
-.integration-section {
-  width: 1290px;
-  margin: 0 auto;
+.integration {
   padding: 169px 134px 212px 134px;
   display: flex;
   flex-direction: column;
@@ -442,9 +441,7 @@ body {
   background: #ff9c7d;
 }
 
-.localization-section {
-  width: 1290px;
-  margin: 0 auto;
+.localization {
   padding: 120px 0 160px 0;
   display: flex;
   flex-direction: column;
@@ -481,4 +478,82 @@ body {
   line-height: 60px;
   text-decoration: none;
   display: block;
+}
+
+/* footer-container */
+.footer-container {
+  background: #eee;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 95px 0px;
+  border-bottom: 1px solid black;
+}
+
+.footer__section-studies {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section__studies__header {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  padding-bottom: 28px;
+}
+
+.footer-section__studies__img {
+  margin-bottom: 31px;
+}
+
+.footer-section__studies__logo {
+  margin-bottom: 11px;
+}
+
+.footer-section__studies__paragraph {
+  margin-bottom: 15px;
+}
+
+.footer-section__studies__link {
+  color: #000;
+  font-family: Graphik LC TT;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.footer__navigation-studies__header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 21px;
+}
+
+.footer__navigation-studies__item {
+  margin-bottom: 15px;
+}
+
+.footer__navigation-studies__link {
+  color: #000;
+  font-family: Graphik LC TT;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.footer__navigation-copyright {
+  padding: 53px 0 43px;
+  display: flex;
+}
+
+.footer__navigation-copyright__img {
+  margin-right: 14px;
+}
+
+.footer__navigation-copyright__header {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
 }

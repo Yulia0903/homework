@@ -5,19 +5,26 @@
       rel="stylesheet prefetch"
       href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css"
     />
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
-      <div class="navigation container">
-        <a href="#" class="navigation__link">
-          <img src="./img/logo.svg" alt="logo" class="navigation__link__logo" />
-        </a>
+    <div class="navigation-container">
+      <div class="navigation section">
         <nav class="navigation__menu">
           <ul class="navigation__list">
+            <li class="navigation__list__item">
+              <a href="#" class="navigation__link">
+                <img
+                  src="./img/logo.svg"
+                  alt="logo"
+                  class="navigation__link__logo"
+                />
+              </a>
+            </li>
             <li class="navigation__list__item">
               <a class="navigation__list__item__link" href="#">Product</a>
             </li>
@@ -50,40 +57,43 @@
       </div>
     </div>
     <div class="main-container">
-      <div class="main-section">
-        <h1 class="main-section__header">
-          Accelerate localization from code to delivery
-        </h1>
-        <p class="main-section__paragraph">
-          A localization and translation management platform for agile teams.
-          Embrace automation, workflow transparency, and fast project delivery.
-        </p>
-        <button class="navigation__button">
-          <a
-            class="navigation__button__link navigation__button__link_secondary"
-            href="#"
-            >Try it free</a
-          >
-        </button>
-        <button class="navigation__button navigation__button_secondary">
-          <a class="navigation__button__link" href="#">Book a demo</a>
-        </button>
-        <p class="main-section__button__paragraph">
-          Try all features for 14 days · No credit card required
-        </p>
-      </div>
-      <div class="main-section-img">
-        <img
-          src="./img/main_img.svg"
-          alt=""
-          class="main-section-img__picture"
-          width="630"
-          height="439"
-        />
+      <div class="main-wrapper section">
+        <div class="main">
+          <h1 class="main-section__header">
+            Accelerate localization from code to delivery
+          </h1>
+          <p class="main-section__paragraph">
+            A localization and translation management platform for agile teams.
+            Embrace automation, workflow transparency, and fast project
+            delivery.
+          </p>
+          <button class="navigation__button">
+            <a
+              class="navigation__button__link navigation__button__link_secondary"
+              href="#"
+              >Try it free</a
+            >
+          </button>
+          <button class="navigation__button navigation__button_secondary">
+            <a class="navigation__button__link" href="#">Book a demo</a>
+          </button>
+          <p class="main-section__button__paragraph">
+            Try all features for 14 days · No credit card required
+          </p>
+        </div>
+        <div class="main-section-img">
+          <img
+            src="./img/main_img.svg"
+            alt=""
+            class="main-section-img__picture"
+            width="630"
+            height="439"
+          />
+        </div>
       </div>
     </div>
     <div class="companies-container">
-      <div class="companies-section">
+      <div class="companies section">
         <h2 class="companies-section__paragraph">
           The preferred localization <br />
           tool of 1500+ companies
@@ -135,7 +145,7 @@
       </div>
     </div>
     <div class="instruction-container">
-      <div class="instruction-section">
+      <div class="instruction section">
         <div class="instruction-section-process">
           <h2 class="instruction-section-process__header">
             Control the <br />
@@ -156,7 +166,7 @@
           />
         </div>
       </div>
-      <div class="instruction-section">
+      <div class="instruction section">
         <div class="instruction-section-process">
           <h2 class="instruction-section-process__header">
             Shorten time <br />
@@ -178,7 +188,7 @@
           />
         </div>
       </div>
-      <div class="instruction-section">
+      <div class="instruction section">
         <div class="instruction-section-process">
           <h2 class="instruction-section-process__header">Ensure quality</h2>
           <p class="instruction-section-process__paragraph">
@@ -197,7 +207,7 @@
           />
         </div>
       </div>
-      <div class="instruction-section">
+      <div class="instruction section">
         <div class="instruction-section-process">
           <h2 class="instruction-section-process__header">
             Less work for <br />
@@ -220,7 +230,7 @@
       </div>
     </div>
     <div class="application-container">
-      <div class="application-section">
+      <div class="application section">
         <h3 class="application-section__header">
           What can you localize with Lokalise?
         </h3>
@@ -279,7 +289,7 @@
       </div>
     </div>
     <div class="productivity-container">
-      <div class="productivity-section">
+      <div class="productivity section">
         <h2 class="productivity-section__paragraph">
           Boost your localization team’s productivity tenfold
         </h2>
@@ -333,7 +343,7 @@
       </div>
     </div>
     <div class="quet-container">
-      <div class="quet-section">
+      <div class="quet section">
         <div class="quet-wrapper">
           <p class="quet-section__paragraph">
             “Lokalise has turned a task we were dreading into an absolute
@@ -350,26 +360,38 @@
       </div>
     </div>
     <div class="software-container">
-      <div class="software-section">
-        <img class="software-section__img-cake" src="./img/cake.png" alt="" />
-        <h3 class="software-section__header">
-          The most-loved translation <br />
-          management software
-        </h3>
-        <img
-          class="software-section__img-reward"
-          src="./img/Frame (1).png"
-          alt=""
-        />
-        <img
-          class="software-section__img-cake"
-          src="./img/Frame (2).png"
-          alt=""
-        />
+      <div class="software section">
+        <div class="software-section__cake">
+          <img class="software-section__img-cake" src="./img/cake.png" alt="" />
+          <h3 class="software-section__header">
+            The most-loved translation <br />
+            management software
+          </h3>
+        </div>
+        <div class="software-section__stars">
+          <div class="software-section__stars-logo">
+            <img class="software-section__stars-img" src="./img/G.svg" alt="" />
+            <img
+              class="software-section__stars-img"
+              src="./img/stars.svg"
+              alt=""
+            />
+            <p class="software-section__paragraph">Users love us</p>
+          </div>
+          <div class="software-section__stars-logo">
+            <img class="software-section__stars-img" src="./img/G.svg" alt="" />
+            <img
+              class="software-section__stars-img"
+              src="./img/stars.svg"
+              alt=""
+            />
+            <p class="software-section__paragraph">Users love us</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="integration-container">
-      <div class="integration-section">
+      <div class="integration section">
         <h2 class="integration-section__header">
           Integrate Lokalise with <br />
           your work tools
@@ -385,7 +407,7 @@
       </div>
     </div>
     <div class="localization-container">
-      <div class="localization-section">
+      <div class="localization section">
         <h2 class="localization-section__header">
           Localization made easy. <br />Why wait?
         </h2>
@@ -397,6 +419,186 @@
         </button>
       </div>
     </div>
-    <div></div>
+    <div class="footer-container">
+      <div class="footer__wrapper section">
+        <div class="footer__section-studies">
+          <h3 class="footer-section__studies__header">Case Studies</h3>
+          <img
+            class="footer-section__studies__img"
+            src="./img/img-studies.png"
+            alt=""
+            width="300"
+          />
+          <img
+            class="footer-section__studies__logo"
+            src="./img/logo2.svg"
+            alt=""
+            width="80"
+          />
+          <p class="footer-section__studies__paragraph">
+            Riding towards global success <br />
+            with a 100% teammate <br />
+            enthusiasm
+          </p>
+          <a class="footer-section__studies__link" href="#">Read more</a>
+        </div>
+        <div class="footer__navigation-studies">
+          <h3 class="footer__navigation-studies__header">Product</h3>
+          <ul class="footer__navigation-studies__list">
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >For developers</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >For managers</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >For translators</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >For designers</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Integrations</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#">Security</a>
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#">Pricing</a>
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Automations</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__navigation-studies">
+          <h3 class="footer__navigation-studies__header">Support</h3>
+          <ul class="footer__navigation-studies__list">
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#">Contact</a>
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Documentation</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#">Status</a>
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Product Updates</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#">CLI Tool</a>
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >API Reference</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >iOS and Android SDK</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Supported File Formats</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__navigation-studies">
+          <h3 class="footer__navigation-studies__header">Company</h3>
+          <ul class="footer__navigation-studies__list">
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#">About</a>
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#">Blog</a>
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Careers | We`re Hiring</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Case Studies</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#">Media Kit</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__navigation-studies">
+          <h3 class="footer__navigation-studies__header">Legal</h3>
+          <ul class="footer__navigation-studies__list">
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Terms of Service</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Cookie Policy</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Privacy Shield</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#">DPA</a>
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >List of Sub-processors</a
+              >
+            </li>
+            <li class="footer__navigation-studies__item">
+              <a class="footer__navigation-studies__link" href="#"
+                >Candidates Privacy <br />
+                Notice</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__navigation-copyright section">
+        <a class="footer__navigation-copyright__link" href="#">
+          <img
+            class="footer__navigation-copyright__img"
+            src="./img/logo3.svg"
+            alt=""
+          />
+        </a>
+        <p class="footer__navigation-copyright__header">
+          Localization workflow for your web and mobile <br />
+          apps, games and digital content.
+        </p>
+      </div>
+    </div>
   </body>
 </html>

@@ -30,9 +30,9 @@ html,
 body {
   height: 100%;
   line-height: 1;
-  background: #fafafa;
+  background: white;
   font-size: 14px;
-  color: #252b42;
+  color: black;
   font-weight: 500;
   font-family: Montserrat;
 }
