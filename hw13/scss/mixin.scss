@@ -1,0 +1,11 @@
+@mixin title($title: rgb(247, 196, 196)) {
+  background-color: $title;
+  text-align: center;
+  font-size: 32px;
+}
+
+@mixin list-item($list-item: rgb(152, 6, 11)) {
+  color: $list-item;
+  list-style-type: circle;
+  margin-bottom: 25px;
+}

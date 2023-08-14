@@ -1,0 +1,40 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+.main__title {
+  background-color: $bg-color;
+  font-size: $font-size-m;
+}
+.main__text {
+  font-size: $font-size-s;
+  margin-bottom: $margin-b;
+}
+.main__button {
+  background-color: $secondary-color;
+  color: $main-color;
+}
+
+.footer-section__text {
+  background-color: $main-color;
+  color: $secondary-color;
+}
+
+.footer-section__title {
+  @include title;
+}
+
+.main__text {
+  @include title($title: blue);
+}
+
+.footer-section__item {
+  @include list-item;
+}
+
+.footer-section__button {
+  border: 3px solid black;
+  background-color: antiquewhite;
+  & .footer-section__link {
+    text-decoration: none;
+  }
+}
