@@ -143,7 +143,9 @@ body {
 }
 
 .companies-section__list__item {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  align-self: center;
 }
 
 .companies-section__img {
@@ -384,6 +386,11 @@ body {
   line-height: 25px;
   letter-spacing: 0.75px;
   text-transform: uppercase;
+}
+
+.software-section__stars__item {
+  display: inline-block;
+  margin-bottom: 14px;
 }
 
 /* integration-container */
