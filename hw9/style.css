@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-/* main */
+/* !!! MAIN !!! */
 
 .main {
   background: #eeeff1;
@@ -17,8 +17,32 @@
   padding: 80px 0 140px 100px;
 }
 
+@media screen and (max-width: 768px) {
+  .main__wrapper {
+    padding: 50px 0 50px 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__wrapper {
+    padding: 30px 20px;
+  }
+}
+
 .navigation {
   margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navigation {
+    margin-bottom: 50px;
+  }
 }
 
 #burger,
@@ -26,9 +50,37 @@
   display: none;
 }
 
+@media screen and (max-width: 480px) {
+  [for="burger"] {
+    display: block;
+    text-align: center;
+    width: 10px;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #burger:checked + label + nav {
+    display: block;
+  }
+}
+
 .list {
   display: flex;
   justify-content: left;
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    flex-wrap: wrap;
+  }
 }
 
 .navigation-item {
@@ -50,6 +102,26 @@
   margin-right: 42px;
 }
 
+@media screen and (max-width: 768px) {
+  .navigation-item {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+  }
+  .navigation-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navigation-item {
+    font-size: 12px;
+  }
+
+  .navigation-item:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
 .main__header {
   color: #000;
   font-size: 48px;
@@ -58,12 +130,38 @@
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .main__header {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__header {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+}
+
 .main__text {
   color: #727272;
   font-size: 16px;
   font-weight: 400;
   line-height: 164.063%;
   margin-bottom: 65px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__text {
+    font-size: 13px;
+    margin-bottom: 50px;
+  }
 }
 
 .btn__link {
@@ -76,11 +174,38 @@
   letter-spacing: 1.6px;
   padding: 20px 40px;
 }
+@media screen and (max-width: 768px) {
+  .btn__link {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    padding: 20px 30px;
+  }
+}
 
-/* about-me */
+@media screen and (max-width: 480px) {
+  .btn__link {
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    padding: 15px 20px;
+  }
+}
+
+/* !!! ABOUT-ME !!! */
 
 .about-me-section {
   padding: 112px 0 112px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-section {
+    padding: 50px 0 112px 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-me-section {
+    padding: 30px 20px;
+  }
 }
 
 .about-me__header {
@@ -92,6 +217,13 @@
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 480px) {
+  .about-me__header {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
 .about-me__text {
   color: #727272;
   text-align: center;
@@ -100,7 +232,19 @@
   line-height: 164.063%;
 }
 
-/* numbers */
+@media screen and (max-width: 768px) {
+  .about-me__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-me__text {
+    font-size: 13px;
+  }
+}
+
+/* !!! NUMBERS !!! */
 
 .numbers {
   background: #34547a;
@@ -110,9 +254,29 @@
   padding: 100px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .numbers-section {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .numbers-section {
+    padding: 30px 20px;
+  }
+}
+
 .numbers__list {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .numbers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 .numbers__item {
@@ -121,6 +285,20 @@
 
 .numbers__item:not(:last-child) {
   margin-right: 49px;
+}
+
+@media screen and (max-width: 992px) {
+  .numbers__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .numbers__item {
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .numbers-item__text {
@@ -140,121 +318,13 @@ span {
   margin-right: 20px;
 }
 
-/* work */
-
-.work {
-  background: #eeeff1;
-}
-
-.work-section {
-  padding: 100px 0 100px 100px;
-}
-
-.work__header {
-  color: #000;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: 50px;
-}
-
-.work__text {
-  color: #727272;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 164.063%;
-  margin-bottom: 57px;
-}
-
-/* footer */
-
-.footer {
-  background: #34547a;
-}
-
-.footer-section {
-  padding: 50px 0 50px 100px;
-}
-
-.footer__header {
-  color: #fff;
-  font-size: 21px;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: 20px;
-}
-
-.footer__text {
-  color: #fff;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 164.063%;
-}
-
-/* media  */
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .numbers__item:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  .numbers-item__text {
-    font-size: 14px;
-  }
-
-  span {
-    font-size: 18px;
-  }
-
+@media screen and (max-width: 992px) {
   .numbers__item img {
     margin-right: 15px;
   }
-
-  iframe {
-    width: 860px;
-  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .main__wrapper {
-    padding-left: 50px;
-    padding-bottom: 80px;
-  }
-
-  .navigation {
-    margin-bottom: 80px;
-  }
-  .navigation-item {
-    font-size: 14px;
-    letter-spacing: 1.3px;
-  }
-  .navigation-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .main__header {
-    font-size: 36px;
-  }
-  .main__text {
-    font-size: 14px;
-  }
-  .btn__link {
-    font-size: 14px;
-    letter-spacing: 1.3px;
-    padding: 20px 30px;
-  }
-  .about-me-section {
-    padding: 50px 0 112px 50px;
-  }
-  .about-me__text {
-    font-size: 14px;
-  }
-
-  .numbers-section {
-    padding: 50px 0;
-  }
-
+@media screen and (max-width: 768px) {
   .numbers-section img {
     width: 45px;
   }
@@ -273,157 +343,147 @@ span {
   .numbers__item img {
     margin-right: 5px;
   }
+}
 
-  .work__text {
-    font-size: 14px;
-  }
+/* !!! WORK !!!*/
 
+.work {
+  background: #eeeff1;
+}
+
+.work-section {
+  padding: 100px 0 100px 100px;
+}
+
+@media screen and (max-width: 768px) {
   .work-section {
     padding: 50px 0 100px 50px;
   }
+}
 
-  iframe {
-    width: 660px;
+@media screen and (max-width: 480px) {
+  .work-section {
+    padding: 30px 20px;
+  }
+}
+
+.work__header {
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .work__header {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.work__text {
+  color: #727272;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 164.063%;
+  margin-bottom: 57px;
+}
+
+@media screen and (max-width: 480px) {
+  .work__text {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 600px;
+}
+
+@media screen and (max-width: 992px) {
+  .work__video {
+    padding: 15px;
   }
 
+  iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  iframe {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  iframe {
+    height: 300px;
+  }
+}
+
+/* !!! FOOTER !!! */
+
+.footer {
+  background: #34547a;
+}
+
+.footer-section {
+  padding: 50px 0 50px 100px;
+}
+
+@media screen and (max-width: 768px) {
   .footer-section {
     padding: 50px 0 50px 50px;
   }
+}
 
+@media screen and (max-width: 480px) {
+  .footer-section {
+    padding: 30px 20px;
+  }
+}
+
+.footer__header {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
   .footer__header {
     font-size: 18px;
     margin-bottom: 15px;
   }
+}
 
+@media screen and (max-width: 480px) {
+  .footer__header {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+.footer__text {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 164.063%;
+}
+
+@media screen and (max-width: 768px) {
   .footer__text {
     font-size: 13px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .main__wrapper {
-    padding: 30px 20px;
-  }
-
-  .navigation {
-    margin-bottom: 50px;
-  }
-
-  [for="burger"] {
-    display: block;
-    text-align: center;
-    width: 10px;
-    margin-bottom: 20px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #burger:checked + label + nav {
-    display: block;
-  }
-
-  .navigation-item {
-    font-size: 12px;
-  }
-
-  .navigation-item:not(:last-child) {
-    margin-right: 12px;
-  }
-
-  .main__header {
-    font-size: 32px;
-    margin-bottom: 50px;
-  }
-
-  .main__text {
-    font-size: 13px;
-    margin-bottom: 50px;
-  }
-
-  .btn__link {
-    font-size: 13px;
-    letter-spacing: 1.2px;
-    padding: 15px 20px;
-  }
-
-  .about-me-section {
-    padding: 30px 20px;
-  }
-
-  .about-me__header {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-
-  .about-me__text {
-    font-size: 13px;
-  }
-  .numbers {
-    background: #34547a;
-  }
-
-  .numbers-section {
-    padding: 30px 20px;
-  }
-
-  .numbers__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .numbers__item {
-    display: flex;
-    margin-right: 20px;
-    margin-bottom: 10px;
-  }
-
-  .numbers-item__text {
-    font-size: 13px;
-  }
-
-  span {
-    font-size: 16px;
-  }
-
-  .numbers__item img {
-    margin-right: 10px;
-  }
-
-  .work-section {
-    padding: 30px 20px;
-  }
-
-  .work__header {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-
-  .work__text {
-    font-size: 13px;
-    margin-bottom: 30px;
-  }
-
-  iframe {
-    width: 440px;
-  }
-
-  .footer-section {
-    padding: 30px 20px;
-  }
-
-  .footer__header {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
+@media screen and (max-width: 480px) {
   .footer__text {
     font-size: 9px;
   }
